@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    cursor:default;
+}
+ul, ol
+{
+    list-style:none;
+}
+a
+{
+    text-decoration:none;
+    color:#ffff;
+    cursor:pointer;
+}
+a i
+{
+    cursor:pointer;
+}
+h1
+{
+    animation:OooShiny alternate infinite ease-in 1s;
+}
+h2
+{
+    animation:Gradientmoment infinite linear 3s;
+}
+.topline
+{
+    width:100%;
+    height:120px;
+    overflow:hidden;
+    background:#000f;
+    color:#ffff;
+    position:fixed;
+    z-index:7;
+}
+.topline .title
+{
+    float:left;
+    margin-top:5px;
+    margin-left:670px;
+}
+.topline .title img
+{
+    text-align:center;
+    margin-top:10px;
+}
+.topline .notifications
+{
+    float:right;
+    font-size:70px;
+    height:50px;
+    margin-right:20px;
+}
+.topline .notiifications i
+{
+    width:70px;
+    position:absolute;
+}
+.main
+{
+    width:1903px;
+    height:2000px;
+    background:url(source/background.png);
+    background-size:100px;
+    position:absolute;
+    margin-top:860px;
+    z-index:5;
+    overflow:hidden;
+}
+.main .left
+{
+    float:left;
+    margin-left:20px;
+    z-index:2;
+    position:relative;
+}
+.ideaimg
+{
+    width:1920px;
+    height:880px;
+    position:fixed;
+    z-index:2;
+}
+.backimg
+{
+    position:absolute;
+    height:80px;
+    width:1903px;
+    z-index:3;
+    margin-top:780px;
+}
+.text
+{
+    font-family:'PT serif';
+    font-size:70px;
+    text-align:center;
+    top:500px;
+    z-index:2;
+    color:#ffff;
+    position:fixed;
+    margin-top:-120px;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color:#000f;
+    text-shadow:0px 0px 10px #000f;
+    margin-left:28%;
+}
+.main .left .download
+{
+    color:#ffff;
+    font-size:64px;
+    font:"arial";
+    z-index:2;
+}
+.main .left .download i
+{
+    font-size:60px;
+    margin:10px;
+    margin-left:30px;
+    color:#ffff;
+}
+.main .left .about .toptitle
+{
+    font-family:"orbitron";
+    font-size:36px;
+}
+.main .left .about .downtext
+{
+    font-family:"arial";
+    font-size:24px;
+    z-index:-2;
+}
+.main .left .more .game:hover
+{
+    background:#fff8;
+}
+.main .left .more .moretitle
+{
+    font-size:36px;
+}
+.gametitle
+{
+    font-size:28px;
+}
+.main .left .games .gmtitle
+{
+    font-size:32px;
+}
+.main .left .games .gamemodes .gamemode:hover
+{
+    background:#fff8;
+}
+.main .left .games .gamemodes .gamemode .gmname
+{
+    font-size:28px;
+}
+.main .right
+{
+    float:right;
+    position:absolute;
+    left:960px;
+    height:800px;
+    overflow:visible;
+    z-index:2;
+    width:720px;
+}
+.main .right .news
+{
+    width:720px;
+}
+.main .right .news .newses:hover
+{
+    background:#fff8;
+}
+.main .right .news .newstop
+{
+    font-weight:bolder;
+    font-size:48px;
+}
+.main .right .news .newstitle
+{
+    font-size:24px;
+}
+.newstext strong, .newstitle strong
+{
+    animation:InvertRGBmoment infinite linear 3s;
+}
+.main .right .news .morenews
+{
+    font-size:64px;
+    font:'arial';
+    color:#ffff;
+}
+.main .right .shader
+{
+    margin-bottom:0px;
+}
+.main .right .shader .shaders:hover
+{
+    background:#fff8;
+}
+.main .right .shader .shadertitle
+{
+    font-size:36px;
+    margin-top:10px;
+}
+.main .right .shader .shadertext
+{
+    font-family:'Arial';
+    font-size:18px;
+}
+.main .right .shader .shaderexplain
+{
+    font-size:28px;
+}
+.main .right .shader .shaderrating img
+{
+    width:50px;
+    height:50px;
+    margin-left:20px;
+}
+.shadername
+{
+    font-size:28px;
+}
+.bottomline
+{
+    width:100%;
+    height:120px;
+    background:#000f;
+    color:#555f;
+    padding:50px;
+    position:fixed;
+    bottom:0px;
+    z-index:7;
+}
+.bottomline .other
+{
+    float:right;
+}
+.bottomline .other i
+{
+    font-size:32px;
+    color:#ffff;
+}
+.bottomline .last
+{
+    text-align:center;
+}
+@keyframes OooShiny
+{
+    from
+    {
+        color:#000f;
+    }
+    to
+    {
+        color:#444f;
+    }
+}
+@keyframes friends
+{
+    from
+    {
+        opacity:0;
+    }
+    20%
+    {
+        opacity:1;
+    }
+    80%
+    {
+        opacity:1;
+    }
+    to
+    {
+        opacity:0;
+    }
+}
+@keyframes urAlone
+{
+    from
+    {
+        opacity:0;
+    }
+    40%
+    {
+        opacity:0;
+    }
+    60%
+    {
+        opacity:1;
+    }
+    80%
+    {
+        opacity:1;
+    }
+    to
+    {
+        opacity:0;
+    }
+}
+@keyframes Gradientmoment
+{
+    from
+    {
+        color:#f00f;
+    }
+    8%
+    {
+        color:#f80f
+    }
+    16%
+    {
+        color:#ff0f;
+    }
+    26%
+    {
+        color:#8f0f;
+    }
+    33%
+    {
+        color:#0f0f;
+    }
+    41%
+    {
+        color:#0f8f;
+    }
+    50%
+    {
+        color:#0fff;
+    }
+    58%
+    {
+        color:#08ff;
+    }
+    67%
+    {
+        color:#00ff;
+    }
+    74%
+    {
+        color:#80ff;
+    }
+    83%
+    {
+        color:#f0ff;
+    }
+    92%
+    {
+        color:#f08f;
+    }
+    to
+    {
+        color:#f00f;
+    }
+}
+@keyframes bye
+{
+    from
+    {
+        opacity:1;
+    }
+    40%
+    {
+        opacity:1;
+    }
+    60%
+    {
+        opacity:0;
+    }
+    80%
+    {
+        opacity:0;
+    }
+    to
+    {
+        opacity:0;
+    }
+}
+@keyframes InvertRGBmoment
+{
+    from
+    {
+        color:#0fff;
+    }
+    8%
+    {
+        color:#08ff;
+    }
+    16%
+    {
+        color:#00ff;
+    }
+    26%
+    {
+        color:#80ff;
+    }
+    33%
+    {
+        color:#f0ff;
+    }
+    41%
+    {
+        color:#f08f;
+    }
+    50%
+    {
+        color:#f00f;
+    }
+    58%
+    {
+        color:#f80f;
+    }
+    67%
+    {
+        color:#ff0f;
+    }
+    74%
+    {
+        color:#8f0f;
+    }
+    83%
+    {
+        color:#0f0f;
+    }
+    92%
+    {
+        color:#0f8f;
+    }
+    to
+    {
+        color:#0fff;
+    }
+}
