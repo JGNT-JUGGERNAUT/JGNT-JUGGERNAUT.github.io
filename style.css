@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap');
 *
 {
     margin:0;
@@ -132,8 +133,8 @@ h2
 }
 .main .left .about .downtext
 {
-    font-family:"arial";
-    font-size:24px;
+    font-family:'Noto Sans';
+    font-size:20px;
     z-index:-2;
 }
 .main .left .more .game:hover
@@ -151,6 +152,10 @@ h2
 .main .left .games .gmtitle
 {
     font-size:32px;
+}
+.main .left .games .gamemodes .gamemode
+{
+    font-family:'Noto Sans';
 }
 .main .left .games .gamemodes .gamemode:hover
 {
