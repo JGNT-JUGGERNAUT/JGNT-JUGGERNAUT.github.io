@@ -152,14 +152,32 @@ h2
 .main .right
 {
     margin-left:10px;
+    overflow:hidden;
 }
 .main .right .mod .modtitle
 {
     font-size:36px;
 }
+.main .right .mod .mods .mode:hover
+{
+    background:#fff8;
+}
 .main .right .mod .mods .mode .modname
 {
     font-size:24px;
+}
+.main .right .gameplay .playtitle
+{
+    font-size:32px;
+}
+.main .right .gameplay .screenshots
+{
+    margin-left:5px;
+}
+.main .right .gameplay .screenshots img
+{
+    width:640px;
+    height:360px;
 }
 .bottomline
 {
