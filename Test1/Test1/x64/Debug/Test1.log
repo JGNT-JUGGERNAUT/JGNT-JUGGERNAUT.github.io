@@ -1,0 +1,12 @@
+﻿  Test1.cpp
+  Test1Dlg.cpp
+C:\Users\sw_306\Desktop\수강생402\김준연\Test1\Test1Dlg.cpp(175,18): error C2059: 구문 오류: ')'
+  (소스 파일 '/Test1Dlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\sw_306\Desktop\수강생402\김준연\Test1\Test1Dlg.cpp(176,2): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+  (소스 파일 '/Test1Dlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\sw_306\Desktop\수강생402\김준연\Test1\Test1Dlg.cpp(179,2): error C2181: if와 짝을 이루지 않는 잘못된 else문입니다.
+  (소스 파일 '/Test1Dlg.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
