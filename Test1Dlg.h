@@ -37,5 +37,9 @@ public:
 //	CString combo2;
 	afx_msg void OnClickedButton1();
 	afx_msg void OnClickedButton2();
-	CString editcode;
+//	CString editcode;
+	CString m_editcode;
+	afx_msg void OnChangeEdit1();
+	virtual BOOL PreTranslateMessage(MSG* pMsg);
+	afx_msg void OnClickedButton3();
 };

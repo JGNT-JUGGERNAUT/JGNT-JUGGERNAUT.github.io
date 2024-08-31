@@ -31,6 +31,8 @@ public:
 // 구현입니다.
 protected:
 	DECLARE_MESSAGE_MAP()
+public:
+//	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };
 
 CAboutDlg::CAboutDlg() : CDialogEx(IDD_ABOUTBOX)
@@ -53,7 +55,7 @@ END_MESSAGE_MAP()
 CTest1Dlg::CTest1Dlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_TEST1_DIALOG, pParent)
 
-	, editcode(_T(""))
+	, m_editcode(_T(""))
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -62,7 +64,8 @@ void CTest1Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	//  DDX_CBString(pDX, IDC_COMBO1, combo1);
-	DDX_Text(pDX, IDC_EDIT1, editcode);
+	//  DDX_Text(pDX, IDC_EDIT1, editcode);
+	DDX_Text(pDX, IDC_EDIT1, m_editcode);
 }
 
 BEGIN_MESSAGE_MAP(CTest1Dlg, CDialogEx)
@@ -72,6 +75,8 @@ BEGIN_MESSAGE_MAP(CTest1Dlg, CDialogEx)
 //	ON_CBN_SELCHANGE(IDC_COMBO1, &CTest1Dlg::OnCbnSelchangeCombo1)
 ON_BN_CLICKED(IDC_BUTTON1, &CTest1Dlg::OnClickedButton1)
 ON_BN_CLICKED(IDC_BUTTON2, &CTest1Dlg::OnClickedButton2)
+ON_EN_CHANGE(IDC_EDIT1, &CTest1Dlg::OnChangeEdit1)
+ON_BN_CLICKED(IDC_BUTTON3, &CTest1Dlg::OnClickedButton3)
 END_MESSAGE_MAP()
 
 
@@ -172,17 +177,57 @@ void CTest1Dlg::OnClickedButton1()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	UpdateData(true);
-	if (editcode == )
+	if (m_editcode == "378")
 	{
-
+		MessageBox("정답입니다.", "결과");
+		OnOK();
 	}
 	else
+		MessageBox("정답이 아닙니다.", "결과");
+	UpdateData(false);
 }
-
 
 void CTest1Dlg::OnClickedButton2()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	MessageBox("나가기 버튼을 클릭하셨습니다.","종료");
 	OnOK();
+}
+
+
+void CTest1Dlg::OnChangeEdit1()
+{
+	// TODO:  RICHEDIT 컨트롤인 경우, 이 컨트롤은
+	// CDialogEx::OnInitDialog() 함수를 재지정 
+	//하고 마스크에 OR 연산하여 설정된 ENM_CHANGE 플래그를 지정하여 CRichEditCtrl().SetEventMask()를 호출하지 않으면
+	// 이 알림 메시지를 보내지 않습니다.
+
+	// TODO:  여기에 컨트롤 알림 처리기 코드를 추가합니다.
+}
+
+BOOL CTest1Dlg::PreTranslateMessage(MSG* pMsg)
+{
+	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
+	if (pMsg->message == WM_KEYDOWN)
+	{
+		switch (pMsg->wParam)
+		{
+		case VK_RETURN://엔터
+			return true;
+		case VK_ESCAPE://esc
+			return true;
+		default:
+			break;
+		}
+	}
+	return CDialogEx::PreTranslateMessage(pMsg);
+}
+
+
+void CTest1Dlg::OnClickedButton3()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	MessageBox("화살표 명령 로봇.", "힌트 #1");
+	MessageBox("화살표 방향.", "힌트 #2");
+	MessageBox("디지털 시계.", "힌트 #3");
+	MessageBox("세자리 수.", "힌트 #4");
 }
